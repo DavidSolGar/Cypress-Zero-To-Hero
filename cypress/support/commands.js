@@ -35,7 +35,6 @@ Cypress.Commands.add('loginToApplication', () => {
       
     // vamos a guardar este valor en cypress.conf.js
 
-    //cy.request('POST', Cypress.env('apiUrl')+'/api/articles', userCredentials)
     cy.request('POST', Cypress.env('apiUrl')+'/api/users/login', userCredentials)
         .its('body').then( body => {
           const token = body.user.token

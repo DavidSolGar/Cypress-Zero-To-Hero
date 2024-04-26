@@ -1,2 +1,2 @@
 node_modules
-src/cypress.env.json
+cypress.env.json
